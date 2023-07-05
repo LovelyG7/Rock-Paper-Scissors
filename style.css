@@ -37,7 +37,7 @@ body {
 } 
 
 .neonText {
-  
+  padding: 0.4em;
   color: #5805a0bc;
   text-shadow:
       0 0 7px #fff,

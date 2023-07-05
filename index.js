@@ -104,7 +104,7 @@ function resetGame() {
   countdown = 12;
   playerScoreElem.innerHTML = `${PlayerName}`;
   computerScoreElem.innerHTML = 'Computer: 0';
-  resultElem.innerHTML = 'Choose your weapon!';
+  resultElem.innerHTML = 'Choose Your Weapon!';
   countdownElem.innerHTML = '12';
   resultElem.style.color = '#5805a0bc';
   computerChoiceElem.innerHTML = '';
