@@ -81,7 +81,7 @@ h1 {
 }
 
 .scoreboard > div {
-  font-size: 2rem;
+  font-size: 1.5rem;
    margin: 0 1rem;
   padding: 0.5rem; 
   border: 2px solid #5805a0bc;
@@ -106,7 +106,6 @@ h1 {
 }
 
 .choice {
-
 
   border: 2px solid #5805a0bc;
   border-radius: 10px;
@@ -157,7 +156,7 @@ h1 {
 /* Style play again button */
 .play-again {
   display: block;
-  margin: 3rem auto 1rem auto;
+  margin: 0.5rem auto 1rem auto;
   padding: 1rem 2rem;
   border: none;
   border-radius: 10px;
@@ -166,12 +165,13 @@ h1 {
   font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .start-button {
   display: block;
-  margin: 3rem auto 1rem auto;
-  /* padding: 1rem 2rem; */
+  margin: 0.5rem auto 1rem auto;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 10px;
   background-color: #2e0354bc;
