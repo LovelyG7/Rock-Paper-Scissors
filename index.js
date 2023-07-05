@@ -127,6 +127,8 @@ function enableOptions() {
 // Event listeners
 choices.forEach((choice) => choice.addEventListener('click', selectWeapon));
 playAgainBtn.addEventListener('click', resetGame);
+  playAgainBtn.style.fontFamily ='Impact, Haettenschweiler, Arial Narrow Bold, sans-serif';
+  
 
 // Start countdown timer when player chooses their first option
 countdownElem.innerHTML = countdown; // Set initial value of countdown in HTML
