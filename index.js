@@ -6,16 +6,12 @@ const playAgainBtn = document.querySelector('#play-again');
 const strtBtn = document.querySelector('start-button');
 const countdownElem = document.querySelector('#countdown');
 const computerChoiceElem = document.querySelector('#computer-choice');
-// let playerName = '';
-
-
 
 const weapons = ['rock', 'paper', 'scissors'];
 let playerScore = 0;
 let computerScore = 0;
 let countdown = 12;
 let timeout;
-
 
 // Function to generate random weapon for computer
 function computerPlay() {
@@ -44,16 +40,17 @@ function updateScore(playerWeapon, computerWeapon) {
       computerScore++;
       computerScoreElem.innerHTML = `Computer: ${computerScore}`;
     }
+    //start time function
     startTimer();
   } else {
     computerChoiceElem.innerHTML = `Game Over`;
     resultElem.innerHTML = `${playerName} did not make a choice! | ${playerName} lose the game!`;
     resultElem.style.color = 'red';
-    // resultElem.style.backgroundColor = 'white';
     resultElem.fontSize= 'xx-large';
     disableOptions();
   }
 
+  // Best of 5 game(minus ties)
   if (playerScore === 3) {
     computerChoiceElem.innerHTML = 'Game Over';
     resultElem.textContent = `${playerName} wins the game!`;
@@ -131,7 +128,7 @@ function enableOptions() {
 choices.forEach((choice) => choice.addEventListener('click', selectWeapon));
 playAgainBtn.addEventListener('click', resetGame);
 
-// Start countdown timer when page loads
+// Start countdown timer when player chooses their first option
 countdownElem.innerHTML = countdown; // Set initial value of countdown in HTML
 // timeout = setTimeout(startTimer, 1200);
 strtBtn.addEventListener('click',startTimer,1200)
