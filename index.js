@@ -7,6 +7,8 @@ const strtBtn = document.querySelector('start-button');
 const countdownElem = document.querySelector('#countdown');
 const computerChoiceElem = document.querySelector('#computer-choice');
 
+let playerName = "Player 1"
+
 const weapons = ['rock', 'paper', 'scissors'];
 let playerScore = 0;
 let computerScore = 0;
@@ -102,7 +104,7 @@ function resetGame() {
   playerScore = 0;
   computerScore = 0;
   countdown = 12;
-  playerScoreElem.innerHTML = `${PlayerName}`;
+  playerScoreElem.innerHTML = `${playerName}: ${playerScore}`;
   computerScoreElem.innerHTML = 'Computer: 0';
   resultElem.innerHTML = 'Choose Your Weapon!';
   countdownElem.innerHTML = '12';
