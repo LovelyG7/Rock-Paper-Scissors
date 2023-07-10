@@ -7,6 +7,8 @@ const strtBtn = document.querySelector('start-button');
 const countdownElem = document.querySelector('#countdown');
 const computerChoiceElem = document.querySelector('#computer-choice');
 
+document.getElementById("playerName").placeholder = "Enter your name...";
+
 let playerName = "Player 1"
 
 const weapons = ['rock', 'paper', 'scissors'];
